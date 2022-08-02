@@ -1,0 +1,119 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragrahs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body, .btn{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--background-headings-buttons);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 28rem;
+    height: 45rem;
+    padding: 5rem;
+}
+
+.card div h3{
+    font-family: "Big Shoulders Display", sans-serif;
+    margin: 2rem auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--background-headings-buttons);
+}
+
+.card div p{
+    color: var(--paragrahs);
+    margin: 3rem auto;
+}
+
+.card div .btn{
+    width: 12rem;
+    height: 4rem;
+    border-color: var(--background-headings-buttons);;
+    border-style: solid;
+    border-radius: 2rem ;
+    margin-top: 3rem;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--background-headings-buttons);
+}
+
+.card-bright-orange{
+    background-color: var(--bright-orange);
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+.card-dark-cyan{
+    background-color: var(--dark-cyan);
+}
+
+.card-very-dark-cyan{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+@media (max-width: 839px) {
+
+    .container{
+        height: 100%;
+        margin: 5rem auto;
+    }
+
+    .card-bright-orange {
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    .card-dark-cyan{
+        border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+    .card-very-dark-cyan {
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+} 
+
+@media (max-width: 559px) {
+
+    .container{
+        height: 100%;
+        margin: 5rem auto;
+    }
+
+    .card-bright-orange {
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .card-dark-cyan{
+        border-radius: 0;
+    }
+
+    .card-very-dark-cyan {
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+}
